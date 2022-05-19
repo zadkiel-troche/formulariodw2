@@ -14,7 +14,7 @@ class Formulario extends Controller
 
         $seleccion = $request->input("select");
 
-        dd($seleccion);
+        //dd($seleccion);
 
         return redirect('/');
     }
