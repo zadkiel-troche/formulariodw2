@@ -11,51 +11,30 @@
   </head>
   <body>
 
-  <div>
+  <div style="background-color:#dedbd9; ">
     <h3>Comercio electronico en tiempos de cuarentena inteligente a causa del covid 19</h3>
 
 
-    <form action="./form-enviar" method="post">
+    <form  action="./form-enviar" method="post">
       {{csrf_field()}}
-      <p>a) Pregunta de ejemplo</p>
-      <input type="text" class="form-control" name="rta1" required>
-      <input type="text" class="form-control" name="rta2" required>
+      <p>a) ¿Implementaba el e-commerce en su empresa antes de la pandemia?</p>
+            <input type="text" class="form-control" name="rta1" required>
+      <p>b) ¿Le costo adaptarse al modelo del e-commerce?</p>
+            <input type="text" class="form-control" name="rta2" required>
+      <p>c) ¿Que metodos de pago acepto durante la pandemia?</p>
+            <input type="text" class="form-control" name="rta3" required>
+      <p>d) ¿Encontro problemas a la hora de implementar el modelo de e-commerce?</p>
+            <input type="text" class="form-control" name="rta4" required>
+      <p>e) ¿Como promociono la empresa durante la pandemia? </p>
+            <input type="text" class="form-control" name="rta5" required>
+      <p>f) ¿Considera util el e-commerce actualmente?</p>
+            <input type="text" class="form-control" name="rta6" required>
 
-      <select class="form-select" name="select" aria-label="Default select example">
-        <option selected>Selecccione un valor</option>
-        <option value="facil">Facil</option>
-        <option value="medio-form">Medio</option>
-        <option value="dificil">Dificil</option>
-      </select>
 
-      <input type="submit" class="btn btn-primary form-control" name="enviar" value="Enviar"> 
-    
-      <!-- <input type="radio" name="rta1" value="Respuesta_a_1" placeholder="Hola">
-      <input type="radio" name="rta1" value="Respuesta_a_2">
-      <input type="radio" name="rta1" value="Respuesta_a_3">
-      <input type="radio" name="rta1" value="Respuesta_a_4">
-      <input type="radio" name="rta1" value="Otro_1"> -->
 
-    <!-- <p>b) Pregunta de ejemplo</p>
-        <p>Respuesta a <input type="radio" name="rta2" value="Respuesta_b_2"/p>
-        <p>Respuesta b <input type="radio" name="rta2" value="Respuesta_b_2"/p>
-        <p>Respuesta c <input type="radio" name="rta2" value="Respuesta_b_2"/p>
-        <p>Respuesta d <input type="radio" name="rta2" value="Respuesta_b_2"/p>
-        <p>Otro <input type="radio" name="rta3" value="Otro_2"/p>
 
-    <p>c) Pregunta de ejemplo</p>
-        <p>Respuesta a <input type="radio" name="rta3" value="Respuesta_c_3"/p>
-        <p>Respuesta b <input type="radio" name="rta3" value="Respuesta_c_3"/p>
-        <p>Respuesta c <input type="radio" name="rta3" value="Respuesta_c_3"/p>
-        <p>Respuesta d <input type="radio" name="rta3" value="Respuesta_c_3"/p>
-        <p>Otro <input type="radio" name="rta3" value="Otro_3"/p>
+      <input type="submit" class="btn btn-primary form-control" name="enviar" value="Enviar">
 
-    <p>d) Pregunta de ejemplo</p>
-        <p>Respuesta a <input type="radio" name="rta4" value="Respuesta_d_4"/p>
-        <p>Respuesta b <input type="radio" name="rta4" value="Respuesta_d_4"/p>
-        <p>Respuesta c <input type="radio" name="rta4" value="Respuesta_d_4"/p>
-        <p>Respuesta d <input type="radio" name="rta4" value="Respuesta_d_4"/p>
-        <p>Otro <input type="radio" name="rta4" value="Otro_4"/p>-->
       </form>
 
     </div>
