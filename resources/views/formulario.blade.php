@@ -11,19 +11,32 @@
   </head>
   <body>
 
-<fieldset>
-  <legend>Comercio electronico en tiempos de cuarentena inteligente a causa del covid 19</legend>
+  <div>
+    <h3>Comercio electronico en tiempos de cuarentena inteligente a causa del covid 19</h3>
 
 
-  <form action="form.php" method="post">
-    <p>a) Pregunta de ejemplo</p>
-      <p>Respuesta a <input type="radio" name="rta1" value="Respuesta_a_1"/p>
-      <p>Respuesta b <input type="radio" name="rta1" value="Respuesta_a_2"/p>
-      <p>Respuesta c <input type="radio" name="rta1" value="Respuesta_a_3"/p>
-      <p>Respuesta d <input type="radio" name="rta1" value="Respuesta_a_4"/p>
-      <p>Otro <input type="radio" name="rta1" value="Otro_1"/p>
+    <form action="./form-enviar" method="post">
+      {{csrf_field()}}
+      <p>a) Pregunta de ejemplo</p>
+      <input type="text" class="form-control" name="rta1" required>
+      <input type="text" class="form-control" name="rta2" required>
 
-    <p>b) Pregunta de ejemplo</p>
+      <select class="form-select" name="select" aria-label="Default select example">
+        <option selected>Selecccione un valor</option>
+        <option value="facil">Facil</option>
+        <option value="medio-form">Medio</option>
+        <option value="dificil">Dificil</option>
+      </select>
+
+      <input type="submit" class="btn btn-primary form-control" name="enviar" value="Enviar"> 
+    
+      <!-- <input type="radio" name="rta1" value="Respuesta_a_1" placeholder="Hola">
+      <input type="radio" name="rta1" value="Respuesta_a_2">
+      <input type="radio" name="rta1" value="Respuesta_a_3">
+      <input type="radio" name="rta1" value="Respuesta_a_4">
+      <input type="radio" name="rta1" value="Otro_1"> -->
+
+    <!-- <p>b) Pregunta de ejemplo</p>
         <p>Respuesta a <input type="radio" name="rta2" value="Respuesta_b_2"/p>
         <p>Respuesta b <input type="radio" name="rta2" value="Respuesta_b_2"/p>
         <p>Respuesta c <input type="radio" name="rta2" value="Respuesta_b_2"/p>
@@ -42,13 +55,10 @@
         <p>Respuesta b <input type="radio" name="rta4" value="Respuesta_d_4"/p>
         <p>Respuesta c <input type="radio" name="rta4" value="Respuesta_d_4"/p>
         <p>Respuesta d <input type="radio" name="rta4" value="Respuesta_d_4"/p>
-        <p>Otro <input type="radio" name="rta4" value="Otro_4"/p>
+        <p>Otro <input type="radio" name="rta4" value="Otro_4"/p>-->
+      </form>
 
-    <p><input type="submit" name="enviar" value="Enviar"> </p>
-  </form>
-
-</fieldset>
-
+    </div>
 
   </body>
 </html>
